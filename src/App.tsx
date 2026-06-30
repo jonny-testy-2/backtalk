@@ -81,6 +81,7 @@ function App() {
 
 	return (
 		<div className="stage">
+			Foo. Bar.
 			{screen === "start" && <StartView onStart={startGame} />}
 
 			{screen === "play" && (

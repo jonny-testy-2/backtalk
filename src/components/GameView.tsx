@@ -6,6 +6,7 @@ import type { useRecorder } from "../hooks/useRecorder";
 import { RECORD_SECONDS } from "../hooks/useRecorder";
 import { LevelBadge } from "./LevelBadge";
 import { ListenButton } from "./ListenButton";
+import { SilentModeHint } from "./SilentModeHint";
 
 interface Props {
 	level: Level;
@@ -175,6 +176,7 @@ export function GameView({ level, levelNumber, recorder }: Props) {
 						</p>
 					</div>
 					<div className="spacer" />
+					<SilentModeHint />
 				</>
 			)}
 		</div>
