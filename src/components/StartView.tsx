@@ -1,5 +1,6 @@
 import { Headphones } from "lucide-react";
 import { Logo } from "./Logo";
+import { SilentModeHint } from "./SilentModeHint";
 
 export function StartView({ onStart }: { onStart: () => void }) {
 	return (
@@ -23,6 +24,7 @@ export function StartView({ onStart }: { onStart: () => void }) {
 				<Headphones />
 				best with headphones
 			</p>
+			<SilentModeHint />
 		</div>
 	);
 }
